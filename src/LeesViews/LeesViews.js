@@ -14,6 +14,7 @@ import {
 	Container,
 	Grid,
 	Box,
+	ListItemButton,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { makeStyles } from "@mui/styles";
@@ -59,7 +60,7 @@ const LeesViews = () => {
 	};
 
 	return (
-		<Box>
+		<Box width={"100%"} backgroundColor={"#424242"}>
 			{isMobile ? (
 				<AppBar position="fixed" className={classes.appBar}>
 					<Toolbar>
@@ -88,8 +89,10 @@ const LeesViews = () => {
 			{isMobile ? (
 				<Drawer anchor="right" open={isDrawerOpen} onClose={handleDrawerToggle}>
 					<List>
-						<ListItem button onClick={handleDrawerToggle}>
-							<ListItemText primary="Home" />
+						<ListItem>
+							<ListItemButton onClick={handleDrawerToggle}>
+								<ListItemText primary="Home" />
+							</ListItemButton>{" "}
 						</ListItem>
 					</List>
 				</Drawer>
@@ -105,6 +108,9 @@ const LeesViews = () => {
 							fontWeight="bold"
 						>
 							Lee's Views
+						</Typography>
+						<Typography variant="h6" component="p" color="white">
+							Your source for beautiful views
 						</Typography>
 					</div>
 				</Box>
