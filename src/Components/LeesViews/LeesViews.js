@@ -4,7 +4,7 @@ import { makeStyles } from "@mui/styles";
 
 import lake from "../../Images/Lake.jpg";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	appBar: {
 		backgroundColor: "black",
 		height: 64,
