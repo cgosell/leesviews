@@ -74,9 +74,6 @@ const NavBar = () => {
 								<ListItem button onClick={() => handleNavigation("/gallery")}>
 									<ListItemText primary="Gallery" />
 								</ListItem>
-								<ListItem button onClick={() => handleNavigation("/upload")}>
-									<ListItemText primary="Upload" />
-								</ListItem>
 							</List>
 						</Drawer>
 					</>
